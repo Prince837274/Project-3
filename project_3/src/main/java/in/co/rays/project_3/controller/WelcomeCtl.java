@@ -14,7 +14,7 @@ import in.co.rays.project_3.util.ServletUtility;
 /**
  * Welcome functionality controller.to show welcome page
  * 
- * @author Prince Bharti
+ * @author SANAT KUMAR
  *
  */
 @WebServlet(name = "WelcomeCtl", urlPatterns = { "/WelcomeCtl" })

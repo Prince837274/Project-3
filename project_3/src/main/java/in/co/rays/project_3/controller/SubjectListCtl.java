@@ -22,7 +22,7 @@ import in.co.rays.project_3.util.ServletUtility;
 
 /**
  * Subject functionality controller.perfrom search and show list operation
-* @author Prince Bharti
+* @author SANAT KUMAR
  *
  */
 @WebServlet(name = "SubjectListCtl", urlPatterns = { "/ctl/SubjectListCtl" })

@@ -79,8 +79,8 @@ public static void addTest() throws Exception{
 	RoleDTO dto=new RoleDTO();
 	dto.setName("Student");
 	dto.setDescription("Student panel");
-	dto.setCreatedBy("Prince Bhartikanoongo493@gmail.com");
-	dto.setModifiedBy("Prince Bhartikanoongo493@gmail.com");
+	dto.setCreatedBy("SANAT KUMARkanoongo493@gmail.com");
+	dto.setModifiedBy("SANAT KUMARkanoongo493@gmail.com");
 	dto.setCreatedDatetime(new Timestamp(new Date().getTime()));
 	dto.setModifiedDatetime(new Timestamp(new Date().getTime()));
 	System.out.println("ROle Add");

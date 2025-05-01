@@ -16,7 +16,7 @@ import in.co.rays.project_3.util.JDBCDataSource;
 
 /**
  * JDBC implements of Course model
-* @author Prince Bharti
+* @author SANAT KUMAR
  *
  */
 public class CourseModelJDBCImpl implements CourseModelInt {

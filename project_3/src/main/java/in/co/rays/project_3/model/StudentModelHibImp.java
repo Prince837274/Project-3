@@ -16,7 +16,7 @@ import in.co.rays.project_3.util.HibDataSource;
 
 /**
  * Hibernate implements of Student model
- * @author Prince Bharti
+ * @author SANAT KUMAR
  *
  */
 public class StudentModelHibImp implements StudentModelInt {

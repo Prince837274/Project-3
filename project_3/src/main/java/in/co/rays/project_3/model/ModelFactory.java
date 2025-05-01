@@ -6,7 +6,7 @@ import java.util.ResourceBundle;
 /**
  * ModelFactory decides which model implementation run
  * 
- * @author Prince Bharti
+ * @author SANAT KUMAR
  */
 //MAKE CLASS FINAL SO THAT CHILD CAN'T BE CREATED
 public final class ModelFactory {

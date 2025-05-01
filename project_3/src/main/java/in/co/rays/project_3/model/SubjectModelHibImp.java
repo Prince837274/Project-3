@@ -17,7 +17,7 @@ import in.co.rays.project_3.util.HibDataSource;
 
 /**
  * Hibernate implements of Subject model
- * @author Prince Bharti
+ * @author SANAT KUMAR
  *
  */
 public class SubjectModelHibImp implements SubjectModelInt{

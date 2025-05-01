@@ -12,7 +12,7 @@ import in.co.rays.project_3.model.CollegeModelJDBCImpl;
 
 /**
  * 
- * @author Prince Bharti
+ * @author SANAT KUMAR
  *
  */
 public class CollegeModelTest {

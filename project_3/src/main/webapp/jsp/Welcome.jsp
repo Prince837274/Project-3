@@ -26,7 +26,7 @@ body {
 
 	<div class="text-cs1" style="text-align: center;">
 
-		<h1 style="padding-top: 15%; color: yellow; font-size: 50px;">
+		<h1 style="padding-top: 15%; color: purple; font-size: 50px;">
 			<b>Welcome To Online Result System</b>
 		</h1>
 

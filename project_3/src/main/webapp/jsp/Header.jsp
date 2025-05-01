@@ -34,10 +34,11 @@
 	<%
 		UserDTO userDto = (UserDTO) session.getAttribute("user");
 		boolean userLoggedIn = userDto != null;
-		String welcomeMsg = "Hello, ";
+		String welcomeMsg = "Hello  ";
 		if (userLoggedIn) {
 			String role = (String) session.getAttribute("role");
 			welcomeMsg += userDto.getFirstName() + " (" + role + ")";
+		
 		} else {
 			welcomeMsg += "Guest";
 		}
@@ -90,8 +91,8 @@
 				<%
 					} else if (userDto.getRoleId() == RoleDTO.ADMIN || userDto.getRoleId() == RoleDTO.COLLEGE_SCHOOL) {
 				%>
-				
-				
+
+
 				<li class="nav-item dropdown" style="padding-left: 5px;"><a
 					class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
 					role="button" data-toggle="dropdown" aria-haspopup="true"
@@ -103,7 +104,7 @@
 							class="dropdown-item" href="<%=ORSView.CUSTOMER_LIST_CTL%>"><i
 							class="fas fa-user-friends"></i>Customer List</a>
 					</div></li>
-				
+
 				<%-- <li class="nav-item dropdown" style="padding-left: 5px"><a
 					class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
 					role="button" data-toggle="dropdown" aria-haspopup="true"
@@ -199,7 +200,7 @@
 							class="fas fa-user-friends"></i>PurchaseOrder List</a>
 					</div></li>
  --%>
-				
+
 
 				<li class="nav-item dropdown" style="padding-left: 5px;"><a
 					class="nav-link dropdown-toggle" href="#" id="navbarDropdown"

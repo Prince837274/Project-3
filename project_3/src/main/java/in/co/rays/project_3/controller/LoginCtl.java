@@ -27,7 +27,7 @@ import in.co.rays.project_3.util.ServletUtility;
 /**
  * Login functionality controller. perform login operation
  * 
- * @author Prince Bharti
+ * @author SANAT KUMAR
  *
  */
 
@@ -85,7 +85,7 @@ public class LoginCtl extends BaseCtl {
 
 		long id = DataUtility.getLong(request.getParameter("id"));
 
-		if (OP_LOG_OUT.equals(op)){
+		if (OP_LOG_OUT.equals(op)) {
 			session = request.getSession();
 			session.invalidate();
 			ServletUtility.setSuccessMessage("User Logged Out Successfully", request);
@@ -115,13 +115,11 @@ public class LoginCtl extends BaseCtl {
 		System.out.println(";;;" + op);
 
 		HttpSession session = request.getSession(true);
-		
 
 		UserModelInt userModel = ModelFactory.getInstance().getUserModel();
 		RoleModelInt roleModel = ModelFactory.getInstance().getRoleModel();
 
-
-		if(OP_SIGN_IN.equalsIgnoreCase(op)) {
+		if (OP_SIGN_IN.equalsIgnoreCase(op)) {
 			UserDTO dto = (UserDTO) populateDTO(request);
 			try {
 				dto = userModel.authenticate(dto.getLogin(), dto.getPassword());

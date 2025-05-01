@@ -22,7 +22,7 @@ import in.co.rays.project_3.util.ServletUtility;
  *         calling any application controller. It prevents any user to access
  *         application without login.
  * 
- * @author Prince Bharti
+ * @author SANAT KUMAR
  *
  */
 @WebFilter(urlPatterns = { "/ctl/*","/doc/*" })

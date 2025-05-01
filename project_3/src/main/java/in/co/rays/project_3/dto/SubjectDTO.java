@@ -3,7 +3,7 @@ package in.co.rays.project_3.dto;
 /**
  * Subject JavaDto encapsulates subject attributes
  * 
- * @author Prince Bharti
+ * @author SANAT KUMAR
  *
  */
 

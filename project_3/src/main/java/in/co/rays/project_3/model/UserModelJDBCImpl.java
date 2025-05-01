@@ -22,7 +22,7 @@ import in.co.rays.project_3.util.JDBCDataSource;
 
 /**
  * JDBC implements of User model
- * @author Prince Bharti
+ * @author SANAT KUMAR
  *
  */
 public class UserModelJDBCImpl implements UserModelInt {

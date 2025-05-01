@@ -141,6 +141,8 @@
 
 			</br>
 			<div style="margin-bottom: 20px;" class="table-responsive">
+			
+			// how to create table
 				<table class="table table-bordered table-dark table-hover">
 					<thead>
 						<tr style="background-color: grey">
