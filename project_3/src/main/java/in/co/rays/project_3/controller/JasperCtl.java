@@ -27,7 +27,7 @@ import net.sf.jasperreports.engine.JasperReport;
  * Jasper functionality Controller. Performs operation for Print pdf of
  * MarksheetMeriteList
  *
- * @author Yashmita Rathore
+ * @author Prince 
  */
 
 @WebServlet(name = "JasperCtl", urlPatterns = { "/ctl/JasperCtl" })
@@ -56,8 +56,6 @@ public class JasperCtl extends BaseCtl {
 			Map<String, Object> map = new HashMap<String, Object>();
 			map.put("ID", 1l);
 			java.sql.Connection conn = null;
-
-			ResourceBundle rb = ResourceBundle.getBundle("in.co.rays.project_3.bundle.system");
 
 			String Database = rb.getString("DATABASE");
 
