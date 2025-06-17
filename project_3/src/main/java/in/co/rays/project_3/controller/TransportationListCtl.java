@@ -4,7 +4,6 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -17,7 +16,6 @@ import in.co.rays.project_3.dto.BaseDTO;
 import in.co.rays.project_3.dto.TransportationDTO;
 import in.co.rays.project_3.exception.ApplicationException;
 import in.co.rays.project_3.model.ModelFactory;
-import in.co.rays.project_3.model.RoleModelInt;
 import in.co.rays.project_3.model.TransportationModelInt;
 import in.co.rays.project_3.util.DataUtility;
 import in.co.rays.project_3.util.PropertyReader;
@@ -26,7 +24,7 @@ import in.co.rays.project_3.util.ServletUtility;
 /**
  * Transportation List functionality controller.to perform Search and List operation.
  * 
- * @author SANAT KUMAR
+ * @author Prince Bharti
  *
  */
 @WebServlet(name = "TransportationListCtl", urlPatterns = { "/ctl/TransportationListCtl" })

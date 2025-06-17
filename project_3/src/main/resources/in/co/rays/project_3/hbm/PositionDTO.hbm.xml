@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 10-May-2025, 6:08:29 PM by Hibernate Tools 3.5.0.Final -->
+
+<hibernate-mapping package="in.co.rays.project_3.dto">
+	<class name="PositionDTO" table="ST_POSITION">
+		<id name="id" type="java.lang.Long">
+            <column name="ID" />
+            <generator class="increment" />
+        </id>
+
+   
+        <property name="designation" type="java.lang.String">
+            <column name="DESIGNATION" />
+        </property>
+        <property name="condition" type="java.lang.String">
+            <column name="CONDITION" />
+        </property>
+        <property name="requiredExperience" type="java.lang.String">
+            <column name="REQUIRED_EXPERIENCE" />
+        </property>
+        <property name="openingDate" type="java.util.Date">
+            <column name="OPENING_DATE" />
+        </property>
+ 
+    </class>
+</hibernate-mapping>

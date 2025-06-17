@@ -23,7 +23,7 @@ import in.co.rays.project_3.util.ServletUtility;
 /**
  * Forget password ctl.To perform password send in email
  * 
- * @author SANAT KUMAR
+ * @author Prince Bharti
  *
  */
 @WebServlet(urlPatterns = { "/ForgetPasswordCtl" })

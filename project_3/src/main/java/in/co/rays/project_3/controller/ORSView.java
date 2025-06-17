@@ -69,6 +69,14 @@ public interface ORSView {
 
 	public String CART_VIEW = PAGE_FOLDER + "/CartView.jsp";
 	public String CART_LIST_VIEW = PAGE_FOLDER + "/CartListView.jsp";
+	
+	public String POSITION_VIEW = PAGE_FOLDER + "/PositionView.jsp";
+	public String POSITION_LIST_VIEW = PAGE_FOLDER + "/PositionListView.jsp";
+	
+	public String DOCTOR_VIEW = PAGE_FOLDER + "/DoctorView.jsp";
+	public String DOCTOR_LIST_VIEW = PAGE_FOLDER + "/DoctorListView.jsp";
+
+
 
 //==========================================================================================================================
 
@@ -112,6 +120,14 @@ public interface ORSView {
 
 	public String CART_CTL = APP_CONTEXT + "/ctl/CartCtl";
 	public String CART_LIST_CTL = APP_CONTEXT + "/ctl/CartListCtl";
+	
+	public String POSITION_CTL = APP_CONTEXT + "/ctl/PositionCtl";
+	public String POSITION_LIST_CTL = APP_CONTEXT + "/ctl/PositionListCtl";
+	
+	public String DOCTOR_CTL = APP_CONTEXT + "/ctl/DoctorCtl";
+	public String DOCTOR_LIST_CTL = APP_CONTEXT + "/ctl/DoctorListCtl";
+
+
 
 	// =================================================================================Staff
 	// Member

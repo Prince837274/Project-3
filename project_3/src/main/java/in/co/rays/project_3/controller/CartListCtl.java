@@ -26,7 +26,7 @@ import in.co.rays.project_3.util.ServletUtility;
 /**
  * Cart List functionality controller.to perform Search and List operation.
  * 
- * @author SANAT KUMAR
+ * @author Prince Bharti
  *
  */
 @WebServlet(name = "CartListCtl", urlPatterns = { "/ctl/CartListCtl" })

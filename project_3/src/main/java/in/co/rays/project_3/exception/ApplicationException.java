@@ -3,7 +3,7 @@ package in.co.rays.project_3.exception;
 public class ApplicationException extends Exception {
    /**
     * 
-    * @author SANAT KUMAR
+    * @author Prince Bharti
      */
 	private static final long serialVersionUID = 1L;
 

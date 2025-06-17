@@ -21,7 +21,8 @@ import in.co.rays.project_3.util.PropertyReader;
 import in.co.rays.project_3.util.ServletUtility;
 
 @WebServlet(name = "CartCtl", urlPatterns = { "/ctl/CartCtl" })
-public class  CartCtl extends BaseCtl{
+
+  public class  CartCtl extends BaseCtl{
 	@Override
 	protected void preload(HttpServletRequest request) {
 
@@ -32,7 +33,7 @@ public class  CartCtl extends BaseCtl{
 		map.put(3, "car");
 		
 		
-		request.setAttribute("imp", map);
+		request.setAttribute("condition", map);
 	    
 	}
 	protected boolean validate(HttpServletRequest request) {

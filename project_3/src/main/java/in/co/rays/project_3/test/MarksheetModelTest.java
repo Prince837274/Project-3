@@ -104,7 +104,7 @@ public class MarksheetModelTest {
 		dto.setRollNo("102");
 		dto.setStudentId(2);
 		dto.setPhysics(75);
-		dto.setName("SANAT KUMAR");
+		dto.setName("Prince Bharti");
 		dto.setCreatedBy("Admin");
 		dto.setModifiedBy("Admin");
 		dto.setCreatedDatetime(new Timestamp(new Date().getTime()));

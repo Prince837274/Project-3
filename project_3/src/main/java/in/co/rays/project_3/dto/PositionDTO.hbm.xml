@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 30-May-2025, 10:23:40 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <subclass name="in.co.rays.project_3.dto.PositionDTO" extends="in.co.rays.project_3.dto.BaseDTO" discriminator-value="PositionDTO" lazy="false">
+        <property name="designation" type="java.lang.String">
+            <column name="DESIGNATION" />
+        </property>
+        <property name="condition" type="java.lang.String">
+            <column name="CONDITION" />
+        </property>
+        <property name="requiredExperience" type="java.lang.String">
+            <column name="REQUIREDEXPERIENCE" />
+        </property>
+        <property name="openingDate" type="java.util.Date">
+            <column name="OPENINGDATE" />
+        </property>
+    </subclass>
+</hibernate-mapping>

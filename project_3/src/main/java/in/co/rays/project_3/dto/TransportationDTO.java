@@ -3,7 +3,7 @@ package in.co.rays.project_3.dto;
 import java.util.Date;
 
 public class TransportationDTO extends BaseDTO {
-
+	
 	private String description;
 	private int mode;
 	private Date date;
@@ -39,6 +39,12 @@ public class TransportationDTO extends BaseDTO {
 
 	public void setCost(int cost) {
 		this.cost = cost;
+	}
+
+	@Override
+	public String getKey() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 	@Override

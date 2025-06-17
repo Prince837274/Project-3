@@ -15,7 +15,7 @@ import in.co.rays.project_3.dto.DropdownList;
 /**
  * HTML Utility class to produce HTML contents like Dropdown List.
  * 
- * @author SANAT KUMAR
+ * @author Prince Bharti
  *
  */
 public class HTMLUtility {
@@ -224,19 +224,53 @@ public class HTMLUtility {
 		return sb.toString();
 	}
 
+//	public static String getList2(String name, String selectedVal, Map<Integer, String> map) {
+//
+//		StringBuffer sb = new StringBuffer("<select class='form-control' name='" + name + "'>");
+//
+//		Set<Integer> keys = map.keySet();
+//		String val = null;
+//		boolean select = true;
+//		if (select) {
+//
+//			sb.append(
+//					"<option class='dropdown-item' style='border: 2px solid #8080803b;' selected value=''>-------------------Select "
+//							+ name + "--------------------</option>");
+//		}
+//
+//		for (Integer key : keys) {
+//			val = map.get(key);
+//			// Convert key to String for comparison and value attribute
+//			String keyString = key.toString();
+//			// System.out.println(keyString + "12345678900000000000----===");
+//
+//			if (keyString.trim().equals(selectedVal)) {
+//				// System.out.println(selectedVal + "12345677778899900--====");
+//				// Mark the option as selected if it matches the selectedVal
+//				sb.append("<option selected value='" + key + "'>" + val + "</option>");
+//			} else {
+//				sb.append("<option value='" + key + "'>" + val + "</option>");
+//			}
+//		}
+//
+//		sb.append("</select>");
+//		System.out.println("get list 2=========" + sb.toString());
+//
+//		return sb.toString();
+//	}
+	
 	public static String getList2(String name, String selectedVal, Map<Integer, String> map) {
 
-		StringBuffer sb = new StringBuffer("<select class='form-control' name='" + name + "'>");
+		 StringBuffer sb = new StringBuffer("<select class='form-control' name='" + name + "'>");
 
 		Set<Integer> keys = map.keySet();
 		String val = null;
 		boolean select = true;
 		if (select) {
 
-			sb.append(
-					"<option class='dropdown-item' style='border: 2px solid #8080803b;' selected value=''>-------------------Select "
-							+ name + "--------------------</option>");
-		}
+			// Add placeholder option
+			sb.append("<option class='dropdown-item' selected value=''>------Select a "+ name +"--------</option>");
+	}
 
 		for (Integer key : keys) {
 			val = map.get(key);
@@ -258,6 +292,7 @@ public class HTMLUtility {
 
 		return sb.toString();
 	}
+
 	
 	public static String getPreload(String name, String selectedVal, Map<Integer, String> map) {
 

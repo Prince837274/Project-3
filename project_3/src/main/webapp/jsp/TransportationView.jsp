@@ -25,13 +25,12 @@ i.css {
 }
 
 .input-group-addon {
-	/* box-shadow: 9px 8px 7px #001a33; */
-	background-image: linear-gradient(to bottom right, orange, black);
+	 box-shadow: 9px 8px 7px #001a33; 
+	/* background-image: linear-gradient(to bottom right, orange, black);
 	background-repeat: no repeat;
 	background-size: 100%;
-	padding-bottom: 11px;
+	padding-bottom: 11px; */
 }
-
 .hm {
 	background-image: url('<%=ORSView.APP_CONTEXT%>/img/unsplash.jpg');
 	background-size: cover;
@@ -115,14 +114,12 @@ i.css {
 									<div class="input-group">
 										<div class="input-group-prepend">
 											<div class="input-group-text">
-												<i class="fa fa-user-alt grey-text" style="font-size: 1rem;"></i>
+												<i class="fas fa-align-right grey-text" style="font-size: 1rem;"></i>
 											</div>
 										</div>
 										<textarea type="text" class="form-control" name="description"
 											placeholder="Description"
-											oninput="handleAlphanumericInput(this, 'descriptionError', 15)"
-											onblur="validateLetterInput(this, 'descriptionError'', 15)"
-											<%=DataUtility.getStringData(dto.getDescription())%>></textarea>
+											<%=DataUtility.getStringData(dto.getDescription())%>><%=DataUtility.getStringData(dto.getDescription()) %></textarea>
 									</div>
 								</div>
 								<font color="red" id="descriptionError" class="pl-sm-5">
@@ -132,7 +129,7 @@ i.css {
 									<div class="input-group">
 										<div class="input-group-prepend">
 											<div class="input-group-text">
-												<i class="fa fa-map-marker grey-text"
+												<i class="fas fa-rupee-sign grey-text"
 													style="font-size: 1rem;"></i>
 											</div>
 										</div>
@@ -171,7 +168,7 @@ i.css {
 									<div class="input-group">
 										<div class="input-group-prepend">
 											<div class="input-group-text">
-												<i class="fa fa-venus-mars grey-text"
+												<i class="fas fa-plane-departure grey-text"
 													style="font-size: 1rem;"></i>
 											</div>
 										</div>
@@ -189,10 +186,6 @@ i.css {
 
 									</div>
 									<font color="red" class="pl-sm-5"> <%=ServletUtility.getErrorMessage("mode", request)%></font></br>
-
-
-								</div>
-								<font color="red" class="pl-sm-5"> <%=ServletUtility.getErrorMessage("mode", request)%></font></br>
 
 								<%
 									if (dto.getId() != null && id > 0) {

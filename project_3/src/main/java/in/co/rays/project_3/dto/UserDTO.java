@@ -6,7 +6,7 @@ import java.util.Date;
 /**
  * User JavaDto encapsulates user attributes
  * 
- * @author SANAT KUMAR
+ * @author Prince Bharti
  *
  */
 public class UserDTO extends BaseDTO {

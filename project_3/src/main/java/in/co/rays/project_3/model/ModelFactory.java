@@ -6,7 +6,7 @@ import java.util.ResourceBundle;
 /**
  * ModelFactory decides which model implementation run
  * 
- * @author SANAT KUMAR
+ * @author Prince Bharti
  */
 //MAKE CLASS FINAL SO THAT CHILD CAN'T BE CREATED
 public final class ModelFactory {
@@ -56,6 +56,21 @@ public final class ModelFactory {
 		return userModel;
 	}
 	
+	public TransportationModelInt getTransportationModel() {
+		TransportationModelInt transportationModel = (TransportationModelInt) modelCache.get("transportationModel");
+		if (transportationModel == null) {
+			if ("Hibernate".equals(DATABASE)) {
+				transportationModel = new TransportationModelHibImp();
+			}
+			if ("JDBC".equals(DATABASE)) {
+				transportationModel = new TransportationModelHibImp();
+			}
+			modelCache.put("transportationModel", transportationModel);
+		}
+
+		return transportationModel;
+	}
+	
 	public CustomerModelInt getCustomerModel() {
 
 		CustomerModelInt customerModel = (CustomerModelInt) modelCache.get("customerModel");
@@ -75,18 +90,6 @@ public final class ModelFactory {
 		return customerModel;
 	}
 	
-	public TransportationModelInt getTransportationModel() {
-		TransportationModelInt transportationModel = (TransportationModelInt) modelCache.get("transportationModel");
-		if (transportationModel == null) {
-			if ("Hibernate".equals(DATABASE)) {
-				transportationModel = new TransportationModelHibImpl();
-			}
-			
-			modelCache.put("transportationModel", transportationModel);
-		}
-
-		return transportationModel;
-	}
 	
 	public FollowUpModelInt getFollowUpModel() {
 		FollowUpModelInt FollowUpModel = (FollowUpModelInt) modelCache.get("FollowUpModel");
@@ -289,6 +292,46 @@ public final class ModelFactory {
 
 		return facultyModel;
 	}
+	
+	public PositionModelInt getPositionModel() {
+
+		PositionModelInt PositionModel = (PositionModelInt) modelCache.get("PositionModel");
+
+		if (PositionModel == null){
+
+			if ("Hibernate".equals(DATABASE)) {
+				PositionModel = new PositionModelHibImpl();
+			}
+			if ("JDBC".equals(DATABASE)) {
+				PositionModel = new PositionModelHibImpl();
+			}
+
+		}
+
+		return PositionModel;
+	}
+	
+	public DoctorModelInt getDoctorModel() {
+
+		DoctorModelInt DoctorModel = (DoctorModelInt) modelCache.get("DoctorModel");
+
+		if (DoctorModel == null){
+
+			if ("Hibernate".equals(DATABASE)) {
+				DoctorModel = new DoctorModelHibImpl();
+			}
+			if ("JDBC".equals(DATABASE)) {
+				DoctorModel = new DoctorModelHibImpl();
+			}
+
+		}
+
+		return DoctorModel;
+	}
+	
+
+	
+	
 
 	
 

@@ -1,3 +1,4 @@
+
 <%@page import="java.util.Iterator"%>
 <%@page import="java.util.List"%>
 <%@page import="java.util.Map"%>
@@ -22,12 +23,10 @@
 	src="<%=ORSView.APP_CONTEXT%>/js/CheckBox11.js"></script>
 <style>
 .hm {
-	background-image: url('<%=ORSView.APP_CONTEXT%>/img/rain.jpg');
+	background-image: url('<%=ORSView.APP_CONTEXT%>/img/unsplash.jpg');
 	background-size: cover;
-	background-repeat: no-repeate;
 	padding-top: 6%;
 }
-
 .p1 {
 	padding: 4px;
 	width: 200px;
@@ -70,8 +69,8 @@
 				if (list.size() != 0) {
 			%>
 			<center>
-				<h1 class="text-white font-weight-bold pt-3">
-					<b>Transportation List</b>
+				<h1 class="text-light font-weight-bold pt-3">
+					<u>Transportation List</u>
 				</h1>
 			</center>
 			<br>
@@ -113,7 +112,7 @@
 
 			<div class="row" style="align:center">
 
-				<div class="col-sm-1"></div>
+				<div class="col-sm-2"></div>
 				<div class="col-sm-2">
 					<input type="text" name="cost" placeholder="Cost"
 						class="form-control"
@@ -134,7 +133,7 @@
 						value="<%=ServletUtility.getParameter("location", request)%>">
 				</div>
 				&emsp; --%>
-				<div class="col-sm-2"><%=HTMLUtility.getPreload("mode", String.valueOf(dto.getMode()), map)%></div>
+				<div class="col-sm-2"><%=HTMLUtility.getList2("mode", String.valueOf(dto.getMode()), map)%></div>
 				&emsp;
 
 				<div class="col-sm-2">
@@ -175,7 +174,7 @@
 								name="ids" value="<%=dto.getId()%>"></td>
 							<td class="text"><%=index++%></td>
 							<td class="text"><%=dto.getDescription()%></td>
-							<td class="text"><%=dto.getDate()%></td>
+							<td class="text"><%=DataUtility.getDateString(dto.getDate())%></td>
 							<td class="text"><%=dto.getCost()%></td>
 							<td class="text"><%=map.get(dto.getMode())%></td>
 							<td class="text"><a
@@ -215,8 +214,9 @@
 				if (list.size() == 0) {
 			%>
 			<center>
-				<h1 style="font-size: 40px; color: #162390;">Transportation
-					List</h1>
+				<h1 class="text-white font-weight-bold pt-3">
+					<b>Transportation List</b>
+				</h1>
 			</center>
 			</br>
 			<div class="row">
@@ -252,6 +252,7 @@
 				<%
 					}
 				%>
+				<br>
 				<div style="padding-left: 48%;">
 					<input type="submit" name="operation"
 						class="btn btn-primary btn-md" style="font-size: 17px"

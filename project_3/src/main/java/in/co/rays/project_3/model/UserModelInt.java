@@ -10,7 +10,7 @@ import in.co.rays.project_3.exception.RecordNotFoundException;
 /**
  * Interface of User model
  * 
- * @author SANAT KUMAR
+ * @author Prince Bharti
  *
  */
 public interface UserModelInt {

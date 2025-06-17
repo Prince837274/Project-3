@@ -25,7 +25,7 @@ import in.co.rays.project_3.util.ServletUtility;
 /**
  * user functionality controller.to perform add,delete and update operation
  * 
- * @author SANAT KUMAR
+ * @author Prince Bharti
  *
  */
 @WebServlet(urlPatterns = { "/ctl/UserCtl" })

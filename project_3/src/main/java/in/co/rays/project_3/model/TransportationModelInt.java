@@ -5,11 +5,10 @@ import java.util.List;
 import in.co.rays.project_3.dto.TransportationDTO;
 import in.co.rays.project_3.exception.ApplicationException;
 import in.co.rays.project_3.exception.DuplicateRecordException;
-import in.co.rays.project_3.exception.RecordNotFoundException;
 
-public interface TransportationModelInt { 
+public interface TransportationModelInt {
 	
-	public long add(TransportationDTO dto) throws ApplicationException, DuplicateRecordException;
+public long add(TransportationDTO dto) throws ApplicationException, DuplicateRecordException;
 	
 	public void update(TransportationDTO dto) throws ApplicationException, DuplicateRecordException;
 
@@ -24,6 +23,5 @@ public interface TransportationModelInt {
 	public List search(TransportationDTO dto, int pageNo, int pageSize) throws ApplicationException;
 
 	public List search(TransportationDTO dto) throws ApplicationException;
-
 
 }
