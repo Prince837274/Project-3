@@ -70,7 +70,7 @@
 			%>
 			<center>
 				<h1 class="text-light font-weight-bold pt-3">
-					<u>Transportation List 2</u>
+					<u>Transportation List </u>
 				</h1>
 			</center>
 			<br>
