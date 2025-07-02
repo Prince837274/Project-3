@@ -110,7 +110,7 @@
 				<div class="col-md-4"></div>
 			</div>
 
-			<div class="row" style="align:center">
+			<div class="row" style="align:center">//search field
 
 				<div class="col-sm-2"></div>
 				<div class="col-sm-2">
@@ -145,7 +145,7 @@
 				</div>
 
 
-				<div class="col-sm-2"></div>
+				<div class="col-sm-2"></div> // search field
 			</div>
 
 			</br>
